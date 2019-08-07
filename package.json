@@ -1,0 +1,28 @@
+{
+  "name": "narime",
+  "version": "1.0.0",
+  "description": "Narime web application",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open",
+    "build": "webpack --config webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jleiva/narime.git"
+  },
+  "author": "leivajd@gmail.com",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/jleiva/narime/issues"
+  },
+  "homepage": "https://github.com/jleiva/narime#readme",
+  "devDependencies": {
+    "copy-webpack-plugin": "^5.0.4",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
+  }
+}
