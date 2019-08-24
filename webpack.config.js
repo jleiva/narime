@@ -1,6 +1,7 @@
 const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   entry: './src/js/index.js',
@@ -9,6 +10,7 @@ module.exports = {
     filename: 'bundle.js'
   },
   plugins: [
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: './src/index.html'
@@ -22,6 +24,11 @@ module.exports = {
       {
         from: './src/img',
         to: 'img' ,
+        force: true
+      },
+      {
+        from: './src/manifest.json',
+        to: 'manifest.json' ,
         force: true
       }
     ])

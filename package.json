@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/jleiva/narime#readme",
   "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^5.0.4",
     "html-webpack-plugin": "^3.2.0",
     "travis-ci-cloudfront-invalidation": "^1.1.0",
